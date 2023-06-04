@@ -1,0 +1,62 @@
+/* font-family: 'Catamaran', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+/* Common Code Start */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+.container {
+    width: 800px;
+    height: 400px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    position: relative;
+}
+@keyframes movingCircle {
+    0%{
+        top: 0px;
+        left: 0%;
+        transform: rotate(180deg);
+    }
+    15%{
+        top: 0px;
+        left: 36%;
+        transform: rotate(-180deg);
+    }
+    30%{
+        top: 0%;
+        left: 75%;
+        transform: rotate(180deg);
+    }
+    45%{
+        top: 50%;
+        left: 75%;
+        transform: rotate(-180deg);
+    }
+    60%{
+        top: 50%;
+        left: 40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        top: 50%;
+        left: 0%;
+        transform: rotate(-180deg);
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        transform: rotate(180deg);
+    }
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background: url(photos/football.webp) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    animation: movingCircle 5s linear infinite alternate;
+}
